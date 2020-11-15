@@ -7,22 +7,29 @@
 
 #include <vector>
 #include "City.hpp"
+
 using namespace std;
+
 class Tour {
 private:
     vector<City*> tour_list;
+    double distance;
     double fitness;
+    void calc_distance();
     void calc_fitness();
 
 public:
-    Tour() : fitness(0){}
+    Tour() : distance(0), fitness(1000){}
     Tour(City* city);
     Tour(vector<City*> city_list);
 
-    double get_fitness(){return fitness;}
-    vector<City*> getList(){return tour_list;}
-    bool operator<(const Tour &a) const {return fitness <  a.fitness;}
     void addCity(City* city);
+    bool contains_city(City* city);
+    void shuffle_cities();
+    double get_tour_distance() const {return distance;}
+    double get_fitness() const {return fitness;}
+    vector<City*> getList() const {return tour_list;}
+    bool operator<(const Tour &a) const {return distance <  a.distance;}
 };
 
 
