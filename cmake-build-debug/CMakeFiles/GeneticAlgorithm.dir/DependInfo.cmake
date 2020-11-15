@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/gurdenangi/CLionProjects/GeneticAlgorithm/City.cpp" "/Users/gurdenangi/CLionProjects/GeneticAlgorithm/cmake-build-debug/CMakeFiles/GeneticAlgorithm.dir/City.cpp.o"
+  "/Users/gurdenangi/CLionProjects/GeneticAlgorithm/Tour.cpp" "/Users/gurdenangi/CLionProjects/GeneticAlgorithm/cmake-build-debug/CMakeFiles/GeneticAlgorithm.dir/Tour.cpp.o"
   "/Users/gurdenangi/CLionProjects/GeneticAlgorithm/main.cpp" "/Users/gurdenangi/CLionProjects/GeneticAlgorithm/cmake-build-debug/CMakeFiles/GeneticAlgorithm.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

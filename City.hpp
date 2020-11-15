@@ -6,6 +6,7 @@
 #define GENETICALGORITHM_CITY_HPP
 
 #include <string>
+#include <cmath>
 
 using namespace std;
 
@@ -20,6 +21,9 @@ public:
     string getName(){return name;}
     int getX(){return x_coord;}
     int getY(){return y_coord;}
+    double getDistance(City* city) const{
+        return sqrt(pow(city->x_coord - x_coord, 2) + pow(city->y_coord - y_coord, 2));
+    }
 
 };
 
