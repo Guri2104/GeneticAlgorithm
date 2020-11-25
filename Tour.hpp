@@ -6,6 +6,7 @@
 #define GENETICALGORITHM_TOUR_HPP
 
 #include <vector>
+#include <algorithm>
 #include "City.hpp"
 
 using namespace std;
@@ -29,6 +30,7 @@ public:
     double get_tour_distance() const {return distance;}
     double get_fitness() const {return fitness;}
     vector<City*> getList() const {return tour_list;}
+    void setList(vector<City*> list) {tour_list = list;}
     bool operator<(const Tour &a) const {return distance <  a.distance;}
 };
 

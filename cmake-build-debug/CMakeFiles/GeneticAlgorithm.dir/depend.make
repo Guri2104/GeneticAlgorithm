@@ -8,5 +8,7 @@ CMakeFiles/GeneticAlgorithm.dir/Tour.cpp.o: ../City.hpp
 CMakeFiles/GeneticAlgorithm.dir/Tour.cpp.o: ../Tour.cpp
 CMakeFiles/GeneticAlgorithm.dir/Tour.cpp.o: ../Tour.hpp
 
+CMakeFiles/GeneticAlgorithm.dir/main.cpp.o: ../City.hpp
+CMakeFiles/GeneticAlgorithm.dir/main.cpp.o: ../Tour.hpp
 CMakeFiles/GeneticAlgorithm.dir/main.cpp.o: ../main.cpp
 

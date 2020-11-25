@@ -3,6 +3,7 @@
 //
 
 #include "Tour.hpp"
+#include <iostream>
 
 Tour::Tour(City *city)  {
     addCity(city);
@@ -20,7 +21,7 @@ void Tour::calc_distance() {
     vector<City*>::iterator it1 = tour_list.begin();
     vector<City*>::iterator it2 = tour_list.end();
     vector<City*>::iterator it3;
-    for (it3 = it1; it3 != it2; ++it3){
+    for (it3 = it1; it3 != it2-1; ++it3){
         distance += (*it3)->getDistance(*(it3+1));
     }
     it3 = it1;
@@ -50,3 +51,9 @@ bool Tour::contains_city(City *city)  {
     }
     return false;
 }
+
+void Tour::shuffle_cities() {
+    random_shuffle(tour_list.begin(), tour_list.end());
+    calc_distance();
+}
+
